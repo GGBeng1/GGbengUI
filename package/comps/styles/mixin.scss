@@ -1,0 +1,18 @@
+// border圆角
+@mixin border-radius($radius:$border-radius-small){
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// 宽高
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+// 按下去背景颜色
+@mixin tap-color($bgcolor, $opacity:.9) {
+    
+  &:active {
+    background-color: $bgcolor * $opacity;
+  }
+}

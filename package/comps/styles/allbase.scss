@@ -1,0 +1,78 @@
+$css-prefix : g-;
+//颜色
+$primary-color          : #2d8cf0;
+$info-color             : #2db7f5;
+$success-color          : #19be6b;
+$warning-color          : #ff9900;
+$error-color            : #ed3f14;
+$plain-color            : #fff;
+$transparent-color      : transparent;
+// 背景颜色
+$background-color-base        : #f7f7f7;  // base
+
+//基础
+$body-background        : #fff;
+$title-color            : #1c2438;
+$text-color             : #495060;
+$close-color            : #878c99;
+$font-size-big          : 1.8rem;
+$font-size-base         : 1.6rem;
+$font-size-small        : 1.4rem;
+$line-height-small      : 1.2;
+$line-height-base       : 1.5;
+$line-height-computed   : floor(($font-size-base * $line-height-base));
+$border-radius-base     : 6px;
+$border-radius-small    : 4px;
+
+// 边框
+$border-color-base      : #dddee1;  // outside
+$border-color-split     : #e9eaec;  // inside
+$border-width-default   : 1px;
+$border-style-default   : solid;
+
+// 按钮组
+$btn-font-weight        : normal;
+$btn-padding-base       : 6px 15px;
+$btn-padding-large      : 6px 15px 7px 15px;
+$btn-padding-small      : 2px 7px;
+$btn-font-size          : 12px;
+$btn-font-size-large    : 14px;
+$btn-border-radius      : 4px;
+$btn-border-radius-small: 3px;
+$btn-group-border       : shade($primary-color, 5%);
+
+$btn-disable-color      : #bbbec4;
+$btn-disable-bg         : $background-color-base;
+$btn-disable-border     : $border-color-base;
+
+$btn-default-color      : $text-color;
+$btn-default-bg         : $background-color-base;
+$btn-default-border     : $border-color-base;
+
+$btn-primary-color      : #fff;
+$btn-primary-bg         : $primary-color;
+$btn-primary-border     : $border-color-base;
+
+$btn-success-color      : #fff;
+$btn-success-bg         : $success-color;
+$btn-success-border     : $border-color-base;
+
+$btn-warning-color      : #fff;
+$btn-warning-bg         : $warning-color;
+$btn-warning-border     : $border-color-base;
+
+$btn-error-color        : #fff;
+$btn-error-bg           : $error-color;
+$btn-error-border       : $border-color-base;
+
+$btn-plain-color        : $text-color;
+$btn-plain-bg           : $plain-color;
+$btn-plain-border       : $border-color-base;
+
+$btn-text-color         : $text-color;
+$btn-text-bg            : $transparent-color;
+$btn-text-border        : $border-color-base;
+
+$btn-circle-size        : 28px;
+$btn-circle-size-lg     : 32px;
+$btn-circle-size-sm     : 22px;
