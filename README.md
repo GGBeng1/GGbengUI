@@ -33,11 +33,11 @@ Vue.use(GGbeng)
 ``` bash
 
 # 一般组件
-import xmButton from 'ggbeng-ui/package/comps/components/button'
+import gButton from 'ggbeng-ui/package/comps/components/button'
 ...
 
 components: {
-    ggButton,
+    gButton
 }
 ``` 
 
