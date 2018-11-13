@@ -1,7 +1,8 @@
 # Button 按钮
 ----
 ### 基础用法
-使用```type```、```plain```、```icon```、```loading```、```long```、```bg-color```、```color```、```border-color```、```no-radius```、```block```和```round```属性来定义 Button 的样式。
+使用```type```、```plain```、```icon```、```loading```、```long```、```bg-color```、```color```、```border-color```、```no-radius```和```round```属性来定义 Button 的样式。
+使用```g-button-group```可以将button以等份布局。
 ``` html
 <g-button>普通按钮</g-button>
 <g-button type="primary" @click="btnClick" icon="g__icon--checked" >primary按钮</g-button>
@@ -11,7 +12,7 @@
 <g-button type="text" icon="g__icon--checked">文字按钮</g-button>
 <g-button bg-color="#fc0" color="#e0439a" border-color="#fc0">自定义颜色</g-button>
 <g-button round long>长按钮</g-button>
-<g-button-group class="btn__group">
+<g-button-group>
     <g-button type="warning">警告按钮</g-button>
     <g-button type="primary" @click="btnClick" icon="g__icon--checked" >primary按钮</g-button>
 </g-button-group>
