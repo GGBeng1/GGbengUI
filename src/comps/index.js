@@ -1,8 +1,10 @@
 import './styles/index.scss'
 import Button from './components/button/index.js'
+import ButtonGroup from './components/buttongroup/index.js'
 
 const components = {
-  Button
+  Button,
+  ButtonGroup
 }
 const install = function (Vue) {
   if (install.installed) return
