@@ -12,7 +12,7 @@
 - 适用于 移动 和 部分PC 端
 
 ## 在线文档
-更多说明，请查看[在线文档](https://ggbeng1.github.io/ggbeng-ui/)
+更多说明，请查看[在线文档](https://ggbeng1.github.io/GGbengUI/)
 
 ## 开发  
 > 全局引入 -- 在 webpack 入口文件 main.js 中如下配置：
