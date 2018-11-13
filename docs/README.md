@@ -1,5 +1,6 @@
-<div align=center>GGbeng-UI</div>   
-基于vue 2+ ，目前 组件 和 文档 在不断完善中。
+# GGbengUI
+基于vue2.o开发的UI库
+基于vue 2 +，目前组件和文档在不断完善中。
 
 ## 特性
 
@@ -32,11 +33,11 @@ Vue.use(GGbeng)
 ``` bash
 
 # 一般组件
-import xmButton from 'ggbeng-ui/package/comps/components/button'
+import gButton from 'ggbeng-ui/package/comps/components/button'
 ...
 
 components: {
-    ggButton,
+    gButton
 }
 ``` 
 
