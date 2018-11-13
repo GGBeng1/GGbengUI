@@ -14,6 +14,9 @@
 ## 在线文档
 更多说明，请查看[在线文档](https://ggbeng1.github.io/GGbengUI/)
 
+## 查看示例  
+[在线示例](https://ggbeng1.github.io/GGbengUI/dist/)
+
 ## 开发  
 > 全局引入 -- 在 webpack 入口文件 main.js 中如下配置：
 
