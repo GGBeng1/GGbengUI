@@ -14,6 +14,9 @@
 ## 开发  
 > 全局引入 -- 在 webpack 入口文件 main.js 中如下配置：
 
+## 查看示例  
+[在线示例](https://ggbeng1.github.io/GGbengUI/dist/)
+
 ``` bash
 # 安装
 cnpm install ggbeng-ui --save  
