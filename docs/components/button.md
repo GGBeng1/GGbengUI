@@ -2,7 +2,7 @@
 ----
 ### 基础用法
 使用```type```、```plain```、```icon```、```loading```、```long```、```bg-color```、```color```、```border-color```、```no-radius```和```round```属性来定义 Button 的样式。
-使用```g-button-group```可以将button以等份布局。Auto Rename Tag
+使用```g-button-group```可以将button以等份布局。
 ``` html
 <g-button>普通按钮</g-button>
 <g-button type="primary" @click="btnClick" icon="g__icon--checked" >primary按钮</g-button>
