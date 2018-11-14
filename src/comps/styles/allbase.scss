@@ -76,3 +76,36 @@ $btn-text-border        : $border-color-base;
 $btn-circle-size        : 28px;
 $btn-circle-size-lg     : 32px;
 $btn-circle-size-sm     : 22px;
+
+/*// z-index list*/
+$zindex-affix           : 10;
+$zindex-modal-mask      : 990;
+$zindex-popover         : 1000;
+$zindex-notification    : 1010;
+$zindex-message         : 1010;
+$zindex-modal           : 1030;
+$zindex-picker          : 1050;
+$zindex-dropdown        : 1050;
+$zindex-tooltip         : 1060;
+$zindex-loading         : 1070;
+
+/*// Input*/
+$input-height-base      : 28px;
+$input-height-lg        : 32px;
+$input-height-sm        : 22px;
+
+$input-padding-horizontal    : 7px;
+$input-padding-vertical-base : 4px;
+$input-padding-vertical-sm   : 1px;
+$input-padding-vertical-lg   : 6px;
+
+$input-placeholder-color     : #333;
+$input-color                 : $text-color;
+$input-border-color          : $border-color-base;
+$input-bg                    : #fff;
+
+$input-hover-border-color    : $primary-color;
+$input-focus-border-color    : $primary-color;
+$input-disabled-bg           : #f7f7f7;
+
+$form-item-margin-bottom     : 24px;

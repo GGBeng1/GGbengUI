@@ -1,7 +1,7 @@
 import './styles/index.scss'
 import Button from './components/button/index.js'
 import ButtonGroup from './components/buttongroup/index.js'
-
+import GlobalModal from './components/globalmodal/index.js'
 const components = {
   Button,
   ButtonGroup
@@ -12,6 +12,7 @@ const install = function (Vue) {
   Object.keys(components).forEach(key => {
     Vue.component(components[key].name, components[key])
   })
+  Vue.prototype.$modal = GlobalModal
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
