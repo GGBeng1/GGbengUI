@@ -32,5 +32,5 @@
 | color     | 文字颜色   | string    |  自定义 |     —    |
 | border-color     | 边框颜色   | string    |   自定义 |     —    | 
 | no-radius     | 无边框   | string    |   自定义 |     —    | 
-| icon     | 图标   | string    |   GUIiocn |     false    | 
+| icon     | 图标   | string    |   自带icon |     false    | 
 
