@@ -17,6 +17,10 @@
 				<div class="box">
 					<g-button long type='warning' style='width: 50%'>长按钮</g-button>
 				</div>
+				<div class="box">
+					<g-button type='warning' loading>loading按钮</g-button>
+					<g-button type='primary' icon='g__icon--user'>icon按钮</g-button>
+				</div>
 				<div class="box" style='width:60%'>
 					<g-button-group>
 						<g-button type="warning">警告</g-button>

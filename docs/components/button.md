@@ -12,6 +12,8 @@
 <g-button type="text" icon="g__icon--checked">文字按钮</g-button>
 <g-button bg-color="#fc0" color="#e0439a" border-color="#fc0">自定义颜色</g-button>
 <g-button round long>长按钮</g-button>
+<g-button type='warning' loading>loading按钮</g-button>
+<g-button type='primary' icon='g__icon--user'>icon按钮</g-button>
 <g-button-group>
     <g-button type="warning">警告按钮</g-button>
     <g-button type="primary" @click="btnClick" icon="g__icon--checked" >primary按钮</g-button>
@@ -30,4 +32,5 @@
 | color     | 文字颜色   | string    |  自定义 |     —    |
 | border-color     | 边框颜色   | string    |   自定义 |     —    | 
 | no-radius     | 无边框   | string    |   自定义 |     —    | 
+| icon     | 图标   | string    |   GUIiocn |     false    | 
 

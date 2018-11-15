@@ -14,6 +14,8 @@
     ]"
     :disabled='disabled'
   >
+    <i :class="icon" v-if="icon"></i>
+    <i class="g__icon--loading" v-if="loading && !icon"></i>
     <slot></slot>
   </button>
 </template>
@@ -37,11 +39,20 @@ export default {
       type: String,
       default: ''
     },
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    icon: {
+      type: String,
+      default: ''
+    },
     round: Boolean,
     plain: Boolean,
     noRadius: Boolean,
     long: Boolean,
     disabled: Boolean
+
   },
   data () {
     return {
