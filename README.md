@@ -14,9 +14,6 @@
 ## 在线文档
 更多说明，请查看[在线文档](https://ggbeng1.github.io/GGbengUI/)
 
-## 查看示例  
-[在线示例](https://ggbeng1.github.io/GGbengUI/dist/)
-
 ## 组件列表
 - [x] 按钮
 - [x] 全局模态框
