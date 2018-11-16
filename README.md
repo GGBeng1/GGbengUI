@@ -17,36 +17,6 @@
 ## 查看示例  
 [在线示例](https://ggbeng1.github.io/GGbengUI/dist/)
 
-## 开发  
-> 全局引入 -- 在 webpack 入口文件 main.js 中如下配置：
-
-``` bash
-# 安装
-cnpm install ggbeng-ui --save  
-
-# 引入css
-import 'ggbeng-ui/package/gui.min.css'  
-
-# 引入xmui.min.js
-import GGbeng from 'ggbeng-UI'  
-
-# 注入到vue
-Vue.use(GGbeng)
-```
-
-> 按需引入 -- 在 入口文件 main.js 或 组件内 中如下配置：
-
-``` bash
-
-# 一般组件
-import gButton from 'ggbeng-ui/package/comps/components/button'
-...
-
-components: {
-    gButton
-}
-``` 
-
 ## 组件列表
 - [x] 按钮
 - [x] 全局模态框
