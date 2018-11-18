@@ -33,3 +33,16 @@
       display: none;
   }
 }
+// flex布局
+@mixin flex(){
+    display: flex;
+    align-items: center;
+    & .g__flex--item {
+        flex: 1;    
+    }
+    &.g__flex--vertical {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+  

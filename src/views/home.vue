@@ -10,7 +10,7 @@
 				
 				<div style='marginTop: 20px'>
 					<g-button round type='primary'>椭圆按钮</g-button>
-					<g-button disabled @click='tap'>禁用按钮</g-button>
+					<g-button disabled>禁用按钮</g-button>
 					<g-button noRadius type='primary'>尖角按钮</g-button>
 					<g-button plain type='success'>朴素按钮</g-button>
 				</div>
@@ -32,6 +32,16 @@
 					<g-button @click="showGolbalModel" type='primary'>全局alert</g-button>
 					<g-button @click="showGolbalModel2" type='success'>全局confirm</g-button>
 				</div>
+				<g-flexbox direction="vertical">
+					<div>普通div</div>
+					<g-flexbox-item>direction="vertical" 的垂直flex div</g-flexbox-item>
+					<div>普通div</div>
+				</g-flexbox>
+				<g-flexbox>
+					<div>普通div</div>
+					<g-flexbox-item @click='modalClick1'>默认的水平flex div</g-flexbox-item>
+					<div>普通div</div>
+				</g-flexbox>
 		</div>
 	</div>
 </template>
@@ -73,20 +83,19 @@ export default {
 
 <style lang='scss'>
 .home {
-	position: relative;
-	padding-left: 120px;
-	.gbutton {
-		position: relative;
-	}
-	.title {
-		font-size: 50px;
-		color: #fc0069;
-		text-align: left;
-	}
-	.box {
-		margin: 0 auto;
-		margin-top: 20px;
-	}
+  position: relative;
+  padding-left: 120px;
+  .gbutton {
+    position: relative;
+  }
+  .title {
+    font-size: 50px;
+    color: #fc0069;
+    text-align: left;
+  }
+  .box {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
-	
 </style>

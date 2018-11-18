@@ -2,9 +2,13 @@ import './styles/index.scss'
 import Button from './components/button/index.js'
 import ButtonGroup from './components/buttongroup/index.js'
 import GlobalModal from './components/globalmodal/index.js'
+import Flexbox from './components/flexbox/index.js'
+import FlexboxItem from './components/flexboxitem/index.js'
 const components = {
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Flexbox,
+  FlexboxItem
 }
 const install = function (Vue) {
   if (install.installed) return
