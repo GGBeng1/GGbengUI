@@ -39,14 +39,251 @@
 				</g-flexbox>
 				<g-flexbox>
 					<div>普通div</div>
-					<g-flexbox-item @click='modalClick1'>默认的水平flex div</g-flexbox-item>
+					<g-flexbox-item>默认的水平flex div</g-flexbox-item>
 					<div>普通div</div>
 				</g-flexbox>
+        <g-grids row="6" style='marginTop: 25px'>
+          <g-grid>
+            <span slot="icon" class="g__icon--phone"></span>
+            <span slot="text">phone</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--lbs"></span>
+            <span slot="text">lbs</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--qrcode"></span>
+            <span slot="text">qrcode</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--date"></span>
+            <span slot="text">date</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--nochecked"></span>
+            <span slot="text">nochecked</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--checked"></span>
+            <span slot="text">checked</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--radio"></span>
+            <span slot="text">radio</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--search"></span>
+            <span slot="text">search</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--close-outline"></span>
+            <span slot="text">close-outline</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--close"></span>
+            <span slot="text">close</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--homefill"></span>
+            <span slot="text">homefill</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--home"></span>
+            <span slot="text">home</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--myfill"></span>
+            <span slot="text">myfill</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--my"></span>
+            <span slot="text">my</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--userfill"></span>
+            <span slot="text">userfill</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--user"></span>
+            <span slot="text">user</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--contact"></span>
+            <span slot="text">contact</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--link"></span>
+            <span slot="text">link</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--unlock"></span>
+            <span slot="text">unlock</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--lock"></span>
+            <span slot="text">lock</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--likefill"></span>
+            <span slot="text">likefill</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--like"></span>
+            <span slot="text">like</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--reduce-outline"></span>
+            <span slot="text">reduce-outline</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--reduce"></span>
+            <span slot="text">reduce</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--add-outline"></span>
+            <span slot="text">add-outline</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--add"></span>
+            <span slot="text">add</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--edit"></span>
+            <span slot="text">edit</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--delete"></span>
+            <span slot="text">delete</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--photodel"></span>
+            <span slot="text">photodel</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--photo"></span>
+            <span slot="text">photo</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--msgfill"></span>
+            <span slot="text">msgfill</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--msg"></span>
+            <span slot="text">msg</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--menumore"></span>
+            <span slot="text">menumore</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--menu"></span>
+            <span slot="text">menu</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--tips"></span>
+            <span slot="text">tips</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--refresh"></span>
+            <span slot="text">refresh</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--share"></span>
+            <span slot="text">share</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--totop"></span>
+            <span slot="text">totop</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--attachment"></span>
+            <span slot="text">attachment</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--emoji"></span>
+            <span slot="text">emoji</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--scan"></span>
+            <span slot="text">scan</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--mall"></span>
+            <span slot="text">mall</span>
+          </g-grid>
+
+          <g-grid>
+            <span slot="icon" class="g__icon--filter"></span>
+            <span slot="text">filter</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--sort"></span>
+            <span slot="text">sort</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--loading"></span>
+            <span slot="text">loading</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--left"></span>
+            <span slot="text">left</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--right"></span>
+            <span slot="text">right</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--up"></span>
+            <span slot="text">up</span>
+          </g-grid>
+          <g-grid>
+            <span slot="icon" class="g__icon--down"></span>
+            <span slot="text">down</span>
+          </g-grid>
+        </g-grids>
+        <g-radio-group v-model="radio" color="#4cd864">
+          <g-radio value="北京"></g-radio>
+          <g-radio value="上海"></g-radio>
+          <g-radio value="广东" disabled>广东--disabled</g-radio>
+          <g-radio value="香港">香港</g-radio>
+        </g-radio-group>
+        <g-radio-group v-model="radio" color="#ed3f14" hor>
+          <g-radio value="北京"></g-radio>
+          <g-radio value="上海"></g-radio>
+          <g-radio value="广东" disabled>广东--disabled</g-radio>
+          <g-radio value="香港">香港</g-radio>
+        </g-radio-group>
+        <g-checkbox-group v-model="checkbox" color="#4cd864">
+            <g-checkbox value="1">北京</g-checkbox>
+            <g-checkbox value="2">上海</g-checkbox>
+            <g-checkbox value="3" disabled>广东--disabled</g-checkbox>
+            <g-checkbox value="4">香港</g-checkbox>
+          </g-checkbox-group>
+        <g-select :data="selectList" @change="selectAction" v-model="curSelected"></g-select>
+        <g-select right :data="selectList" v-model="curSelected"></g-select>
+        <g-switch value="switch" @input="switchAction"></g-switch>
 		</div>
 	</div>
 </template>
 <script>
 export default {
+  data () {
+    return {
+      radio: '北京',
+      selectList: [
+        { name: '请选择出行方式', value: 0 },
+        { name: '巴士', value: 1 },
+        { name: '快车', value: 2 },
+        { name: '专车', value: 3 },
+        { name: '顺风车', value: 4 },
+        { name: '出租车', value: 5 },
+        { name: '代驾', value: 6 }
+      ],
+      curSelected: '3',
+      checkbox: ['1', '4'],
+      switch: true
+    }
+  },
   methods: {
     showGolbalModel () {
       this.$modal.alert({
@@ -76,6 +313,12 @@ export default {
           })
         }
       })
+    },
+    selectAction () {
+      console.log(this.curSelected)
+    },
+    switchAction () {
+      console.log(this.switch)
     }
   }
 }

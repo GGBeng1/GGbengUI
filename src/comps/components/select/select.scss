@@ -1,0 +1,33 @@
+.g__select {
+    flex: 1;
+    height: 40px;
+    border: none;
+    display: block;
+    position: relative;
+    & .g__select-right {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    & .g__select-left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    & select {
+        border: none;
+        display: block;
+        @include size(100%,40px);
+        color: $text-color;
+        font-size: $font-size-base;
+        background-color: $body-background;
+        outline: none;
+        -webkit-appearance:none;
+
+        &.is-right{
+            direction: rtl;
+        }
+    }
+}

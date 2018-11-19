@@ -4,11 +4,27 @@ import ButtonGroup from './components/buttongroup/index.js'
 import GlobalModal from './components/globalmodal/index.js'
 import Flexbox from './components/flexbox/index.js'
 import FlexboxItem from './components/flexboxitem/index.js'
+import Grid from './components/grid/index.js'
+import Grids from './components/grids/index.js'
+import Radio from './components/radio/index.js'
+import RadioGroup from './components/radiogroup/index.js'
+import Select from './components/select/index.js'
+import Switch from './components/switch/index.js'
+import CheckBox from './components/checkbox/index.js'
+import CheckBoxGroup from './components/checkboxgroup/index.js'
 const components = {
   Button,
   ButtonGroup,
   Flexbox,
-  FlexboxItem
+  FlexboxItem,
+  Grid,
+  Grids,
+  Radio,
+  RadioGroup,
+  Select,
+  Switch,
+  CheckBox,
+  CheckBoxGroup
 }
 const install = function (Vue) {
   if (install.installed) return
