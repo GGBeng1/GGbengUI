@@ -8,7 +8,7 @@
 export default {
   name: 'g-checkbox-group',
   props: {
-    value: { // 把v-model绑定的值带进来放进子类绑定的checkedModels数组中
+    value: {
       type: Array,
       default: function () {
         return []
@@ -30,17 +30,17 @@ export default {
     }
   },
   methods: {
-    updateValue () { // 更新数据
+    updateValue () {
       const value = this.value
       this.childrens = this.$children.filter(item => item.$options.name === 'g-checkbox')
       if (this.childrens) {
         this.childrens.forEach(child => {
-          child.checkedModels = value // 把值放进子类绑定的checkedModels数组中
+          child.checkedModels = value
         })
       }
     },
     change (val) {
-      this.$emit('input', val) // 单向流动，让值从父级传出去
+      this.$emit('input', val)
     }
   },
   mounted () {
