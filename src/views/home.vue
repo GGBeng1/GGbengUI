@@ -284,7 +284,7 @@
           <g-navbar bgcolor='#fff' color="#333" left-text="" left-icon="g__icon--left" right-icon="g__icon--edit" @left-action="clickLeft" @right-action="clickRight"><img src="../assets/logo.png"></g-navbar>
           <g-navbar bgcolor='#fff' color="#333" left-text="" left-icon="g__icon--left" right-icon="g__icon--edit" @left-action="clickLeft" @right-action="clickRight" ><div><span slot="icon" class="g__icon--loading"></span>这里是HTML</div></g-navbar>
         </div>
-
+          
 
 
         <h4>标签栏(底部)</h4>
