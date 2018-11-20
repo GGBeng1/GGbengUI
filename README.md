@@ -24,6 +24,10 @@
 - [x] radio
 - [x] checkbox
 - [x] select
+- [x] tag
+- [x] search
+- [x] navbar
+- [x] tabbar
 
 
 
