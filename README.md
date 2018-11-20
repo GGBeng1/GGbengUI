@@ -15,8 +15,15 @@
 更多说明，请查看[在线文档](https://ggbeng1.github.io/GGbengUI/)
 
 ## 组件列表
-- [x] 按钮
-- [x] 全局模态框
+- [x] button
+- [x] modal
+- [x] swich
+- [x] grid
+- [x] icon
+- [x] flexbox
+- [x] radio
+- [x] checkbox
+- [x] select
 
 
 

@@ -241,7 +241,7 @@
             <span slot="text">down</span>
           </g-grid>
         </g-grids>
-        <g-radio-group v-model="radio" color="#4cd864">
+        <!-- <g-radio-group v-model="radio" color="#4cd864">
           <g-radio value="北京"></g-radio>
           <g-radio value="上海"></g-radio>
           <g-radio value="广东" disabled>广东--disabled</g-radio>
@@ -254,14 +254,50 @@
           <g-radio value="香港">香港</g-radio>
         </g-radio-group>
         <g-checkbox-group v-model="checkbox" color="#4cd864">
-            <g-checkbox value="1">北京</g-checkbox>
-            <g-checkbox value="2">上海</g-checkbox>
-            <g-checkbox value="3" disabled>广东--disabled</g-checkbox>
-            <g-checkbox value="4">香港</g-checkbox>
-          </g-checkbox-group>
+          <g-checkbox value="1">北京</g-checkbox>
+          <g-checkbox value="2">上海</g-checkbox>
+          <g-checkbox value="3" disabled>广东--disabled</g-checkbox>
+          <g-checkbox value="4">香港</g-checkbox>
+        </g-checkbox-group> -->
         <g-select :data="selectList" @change="selectAction" v-model="curSelected"></g-select>
         <g-select right :data="selectList" v-model="curSelected"></g-select>
         <g-switch value="switch" @input="switchAction"></g-switch>
+        <div class="box">
+          <g-tag>普通</g-tag>
+          <g-tag type="primary">primary</g-tag>
+          <g-tag type="success">success</g-tag>
+          <g-tag type="warning" round>warning</g-tag>
+          <g-tag type="error" round>error</g-tag>
+          <g-tag bg-color="#fc0" color="#e0439a" border-color="#fc0">自定义颜色</g-tag>
+          <g-tag type="success" v-if="tag1" closable @close="tag1=false">success</g-tag>
+				</div>
+        <div class="box">
+          <g-search bg-color="#09c" @action="searchAction" v-model="value" action-text-color="#fff"><span slot="search">确定</span></g-search>
+          <g-search placeholder="自定义placeholder" v-model="value" @input="inputAction" action-text-color="#777" cancel-text-color="#777" @action="searchAction" @cancel="searchCancel">
+            <span slot="search">搜索</span><span slot="cancel">取消</span>
+          </g-search>
+				</div>
+         <h4>导航栏(顶部)</h4>
+        <div class="box">
+          <g-navbar title="首页文字首页文字首页文字首页文字" bgcolor='#fff' color="#333" left-text="返回" left-icon="g__icon--left" right-text="设置" @left-action="clickLeft" @right-action="clickRight"></g-navbar>
+          <br>
+          <g-navbar bgcolor='#fff' color="#333" left-text="" left-icon="g__icon--left" right-icon="g__icon--edit" @left-action="clickLeft" @right-action="clickRight"><img src="../assets/logo.png"></g-navbar>
+          <g-navbar bgcolor='#fff' color="#333" left-text="" left-icon="g__icon--left" right-icon="g__icon--edit" @left-action="clickLeft" @right-action="clickRight" ><div><span slot="icon" class="g__icon--loading"></span>这里是HTML</div></g-navbar>
+        </div>
+
+
+
+        <h4>标签栏(底部)</h4>
+        <div class="box">
+          <g-tabbar v-model="active">
+            <g-tabbar-item icon="g__icon--home" type="link" href="" dot>首页</g-tabbar-item>
+            <g-tabbar-item icon="g__icon--mall" :href="hrefObj" badge="8" @click="routerAction"><span slot="badge">8</span>商城</g-tabbar-item>
+            <g-tabbar-item icon="g__icon--add" href="add" class="add"></g-tabbar-item>
+            <g-tabbar-item href="###" img-src="../../static/gg.png">自定义图</g-tabbar-item>
+            <g-tabbar-item icon="g__icon--my" href="my" badge="11">我的</g-tabbar-item>
+          </g-tabbar>
+        </div>
+
 		</div>
 	</div>
 </template>
@@ -269,6 +305,7 @@
 export default {
   data () {
     return {
+      tag1: true,
       radio: '北京',
       selectList: [
         { name: '请选择出行方式', value: 0 },
@@ -281,7 +318,10 @@ export default {
       ],
       curSelected: '3',
       checkbox: ['1', '4'],
-      switch: true
+      switch: true,
+      value: '',
+      hrefObj: { path: '/mall', name: 'mall', params: { userId: 123 } },
+      active: '/mall'
     }
   },
   methods: {
@@ -319,6 +359,24 @@ export default {
     },
     switchAction () {
       console.log(this.switch)
+    },
+    inputAction () {
+
+    },
+    searchAction () {
+
+    },
+    searchCancel () {
+      this.value = ''
+    },
+    clickLeft () {
+
+    },
+    clickRight () {
+
+    },
+    routerAction () {
+
     }
   }
 }
@@ -339,6 +397,9 @@ export default {
   .box {
     margin: 0 auto;
     margin-top: 20px;
+  }
+  .g__tabbar--item .g__tabbar--item-icon img {
+      width: 8.2rem;
   }
 }
 </style>

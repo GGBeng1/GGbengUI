@@ -12,6 +12,11 @@ import Select from './components/select/index.js'
 import Switch from './components/switch/index.js'
 import CheckBox from './components/checkbox/index.js'
 import CheckBoxGroup from './components/checkboxgroup/index.js'
+import Tag from './components/tag/index.js'
+import Search from './components/search/index.js'
+import Navbar from './components/navbar/index.js'
+import Tabbar from './components/tabbar/index.js'
+import TabbarItem from './components/tabbaritem/index.js'
 const components = {
   Button,
   ButtonGroup,
@@ -24,7 +29,12 @@ const components = {
   Select,
   Switch,
   CheckBox,
-  CheckBoxGroup
+  CheckBoxGroup,
+  Tag,
+  Search,
+  Navbar,
+  Tabbar,
+  TabbarItem
 }
 const install = function (Vue) {
   if (install.installed) return
