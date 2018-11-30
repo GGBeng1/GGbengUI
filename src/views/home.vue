@@ -297,7 +297,10 @@
             <g-tabbar-item icon="g__icon--my" href="my" badge="11">我的</g-tabbar-item>
           </g-tabbar>
         </div>
-
+        <div class="box">
+          <g-button @click='toastClick1' type='primary'>Toast1</g-button>
+          <g-button @click='toastClick2' type='success'>Toast2</g-button>
+        </div>
 		</div>
 	</div>
 </template>
@@ -354,6 +357,14 @@ export default {
         }
       })
     },
+    toastClick1 () {
+      this.$toast.text({content: '太长会换行呢，15个字以内最好', direction: 'bottom', mask: true})
+    },
+    toastClick2 () {
+      this.$toast.loading({
+        mask: false
+      })
+    },
     selectAction () {
       console.log(this.curSelected)
     },
@@ -385,7 +396,7 @@ export default {
 <style lang='scss'>
 .home {
   position: relative;
-  padding-left: 120px;
+  // padding-left: 120px;
   .gbutton {
     position: relative;
   }
