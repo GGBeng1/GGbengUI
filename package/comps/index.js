@@ -17,6 +17,7 @@ import Search from './components/search/index.js'
 import Navbar from './components/navbar/index.js'
 import Tabbar from './components/tabbar/index.js'
 import TabbarItem from './components/tabbaritem/index.js'
+import Toast from './components/toast/index.js'
 const components = {
   Button,
   ButtonGroup,
@@ -43,6 +44,7 @@ const install = function (Vue) {
     Vue.component(components[key].name, components[key])
   })
   Vue.prototype.$modal = GlobalModal
+  Vue.prototype.$toast = Toast
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

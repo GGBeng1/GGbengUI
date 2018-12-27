@@ -10,39 +10,49 @@
   position: relative;
   color: rgb(31, 45, 61);
   font-size: $font-size-base;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
+
 .g__btn--default {
   @include border-radius;
   transition: all 0.2s linear;
+
   &:hover,
   &:active {
     text-decoration: "none";
     opacity: 0.5;
   }
+
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
   }
+
   &.is-long {
     @include size(100%, auto);
   }
+
   &.is-round {
     @include border-radius(20px);
   }
+
   &.is-plain {
     color: $btn-plain-color;
     background: $btn-plain-bg;
     border: $border-width-default $border-style-default $border-color-base;
   }
+
   &.no-radius {
     @include border-radius(0px);
   }
 }
+
 .g__btn--primary {
   @extend .g__btn--default;
   color: $btn-primary-color;
   background: $btn-primary-bg;
   border: $border-width-default $border-style-default $btn-primary-bg;
+
   // transition: all 0.2s linear;
   &:hover,
   &:active {
@@ -65,6 +75,7 @@
     color: $btn-plain-color;
     background: $btn-plain-bg;
     border: $border-width-default $border-style-default $border-color-base;
+
     &:hover,
     &:active {
       background-color: $btn-primary-bg;
@@ -111,6 +122,7 @@
     color: $btn-plain-color;
     background: $btn-plain-bg;
     border: $border-width-default $border-style-default $border-color-base;
+
     &:hover,
     &:active {
       background-color: $btn-success-bg;
@@ -157,6 +169,7 @@
     color: $btn-plain-color;
     background: $btn-plain-bg;
     border: $border-width-default $border-style-default $border-color-base;
+
     &:hover,
     &:active {
       background-color: $btn-warning-bg;
@@ -203,6 +216,7 @@
     color: $btn-plain-color;
     background: $btn-plain-bg;
     border: $border-width-default $border-style-default $border-color-base;
+
     &:hover,
     &:active {
       background-color: $btn-error-bg;
@@ -249,29 +263,35 @@
     @include border-radius(0);
   }
 }
+
 .g__btn--group {
   position: relative;
   vertical-align: middle;
   display: flex;
+
   & button {
     flex: 1;
     border-radius: 0;
+
     &.no-radius {
       @include border-radius(0);
     }
   }
+
   & button:first-child {
     @include border-radius();
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
   }
+
   & button:last-child {
     @include border-radius;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 }
+
 .g__hasIconBtn {
   padding: 11px 20px;
 }
