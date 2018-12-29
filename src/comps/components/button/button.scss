@@ -22,6 +22,10 @@
     text-decoration: "none";
     opacity: 0.5;
   }
+  
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(221,221,221, .5);
+  }
 
   &[disabled] {
     cursor: not-allowed;
@@ -60,6 +64,10 @@
     text-decoration: none;
     color: $plain-color;
     border-color: $btn-primary-bg;
+  }
+
+  &:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, .5);
   }
 
   &[disabled] {
@@ -108,7 +116,11 @@
     color: $plain-color;
     border-color: $btn-success-bg;
   }
-
+  
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(76,175,80, .5);
+  }
+  
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
@@ -155,7 +167,11 @@
     color: $plain-color;
     border-color: $btn-warning-bg;
   }
-
+  
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,153,0, .5);
+  }
+  
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
@@ -202,7 +218,11 @@
     color: $plain-color;
     border-color: $btn-error-bg;
   }
-
+  
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(244,67,54, .5);
+  }
+  
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
@@ -250,6 +270,10 @@
     border-color: $btn-text-bg;
   }
 
+  &:focus {
+    background-color: $btn-text-bg;
+  }
+
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
@@ -275,6 +299,12 @@
 
     &.no-radius {
       @include border-radius(0);
+    }
+  }
+  
+  & button {
+    &:focus {
+      box-shadow: none;
     }
   }
 
