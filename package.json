@@ -1,6 +1,6 @@
 {
   "name": "ggbeng-ui",
-  "version": "1.2.9",
+  "version": "1.3.0",
   "description": "UI components base on Vue 2.x",
   "author": "GGbeng <1069032339@qq.com>",
   "main": "package/gui.min.js",
