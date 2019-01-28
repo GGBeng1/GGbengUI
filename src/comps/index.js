@@ -18,6 +18,11 @@ import Navbar from './components/navbar/index.js'
 import Tabbar from './components/tabbar/index.js'
 import TabbarItem from './components/tabbaritem/index.js'
 import Toast from './components/toast/index.js'
+<<<<<<< HEAD
+import Actionsheet from './components/actionsheet/index.js'
+import LoadMore from './components/LoadMore/index.js'
+=======
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 const components = {
   Button,
   ButtonGroup,
@@ -35,7 +40,13 @@ const components = {
   Search,
   Navbar,
   Tabbar,
+<<<<<<< HEAD
+  TabbarItem,
+  Actionsheet,
+  LoadMore
+=======
   TabbarItem
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 }
 const install = function (Vue) {
   if (install.installed) return

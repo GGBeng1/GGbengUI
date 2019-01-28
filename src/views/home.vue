@@ -301,6 +301,20 @@
           <g-button @click='toastClick1' type='primary'>Toast1</g-button>
           <g-button @click='toastClick2' type='success'>Toast2</g-button>
         </div>
+<<<<<<< HEAD
+        <div class="box">
+          <g-button type="success" @click="actionSheetVisible1=true">有取消</g-button>
+          <g-button type="primary" @click="actionSheetVisible2=true">无取消</g-button>
+          <g-actionsheet :item-list="itemList" cancel="取消" cancel-color="#19be6b" v-model="actionSheetVisible1" header="这里是个标题" has-icon></g-actionsheet>
+          <g-actionsheet :item-list="itemList" v-model="actionSheetVisible2"></g-actionsheet>
+        </div>
+        <div class="box">
+          <g-loadmore @action="loadMore"></g-loadmore>
+          <g-loadmore icon color="#2d8cf0">loading...</g-loadmore>
+          <g-loadmore no-data>暂无数据</g-loadmore>
+        </div>
+=======
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 		</div>
 	</div>
 </template>
@@ -324,7 +338,40 @@ export default {
       switch: true,
       value: '',
       hrefObj: { path: '/mall', name: 'mall', params: { userId: 123 } },
+<<<<<<< HEAD
+      active: '/mall',
+      itemList: [
+        { text: '顺风车',
+          icon: '<span class="g__icon--loading"></span>',
+          callBack: () => {
+            this.$modal.alert({
+              title: '提示',
+              content: '我是actionsheet弹出来的',
+              color: '#19be6b'
+            })
+          }
+        },
+        { text: '巴士', icon: '<img src="../../static/gg.png"/>', callBack: () => {} },
+        { text: '快车',
+          icon: '<p>“别打算XSS攻击”</p>',
+          callBack: () => {
+            this.$modal.alert({
+              title: '提示',
+              content: '想了解vue XSS攻击点确定',
+              color: '#19be6b',
+              callBack: () => {
+                location.href = 'https://www.ggbeng.xyz'
+              }
+            })
+          }
+        },
+        { text: '专车', callBack: () => {} }
+      ],
+      actionSheetVisible1: false,
+      actionSheetVisible2: false
+=======
       active: '/mall'
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
     }
   },
   methods: {
