@@ -302,6 +302,7 @@
           <g-button @click='toastClick2' type='success'>Toast2</g-button>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="box">
           <g-button type="success" @click="actionSheetVisible1=true">有取消</g-button>
           <g-button type="primary" @click="actionSheetVisible2=true">无取消</g-button>
@@ -313,6 +314,8 @@
           <g-loadmore icon color="#2d8cf0">loading...</g-loadmore>
           <g-loadmore no-data>暂无数据</g-loadmore>
         </div>
+=======
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 =======
 >>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 		</div>
@@ -338,6 +341,7 @@ export default {
       switch: true,
       value: '',
       hrefObj: { path: '/mall', name: 'mall', params: { userId: 123 } },
+<<<<<<< HEAD
 <<<<<<< HEAD
       active: '/mall',
       itemList: [
@@ -369,6 +373,9 @@ export default {
       ],
       actionSheetVisible1: false,
       actionSheetVisible2: false
+=======
+      active: '/mall'
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 =======
       active: '/mall'
 >>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909

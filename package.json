@@ -89,7 +89,11 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "webpack-dev-server": "3.1.11",
+=======
+    "webpack-dev-server": "3.1.11"",
+>>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
 =======
     "webpack-dev-server": "3.1.11"",
 >>>>>>> 49128771d82077ab98cfa4c8f8912135f4afd909
