@@ -363,10 +363,14 @@ export default {
         },
         { text: '专车', callBack: () => {} }
       ],
-      actionSheetVisible1: false
+      actionSheetVisible1: false,
+      actionSheetVisible2: false
     }
   },
   methods: {
+    loadMore () {
+      alert(`loadMore`)
+    },
     showGolbalModel () {
       this.$modal.alert({
         title: '这里可以自定义',
