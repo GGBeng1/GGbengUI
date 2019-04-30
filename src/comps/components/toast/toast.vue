@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="g__toast--wrap" v-show="isVisible" ref="toast" >
+    <div class="g__toast--wrap" v-show="isVisible" ref="toast">
       <div class="g__mask" v-show="mask"></div>
       <div class="g__toast" :class='classz' :style='directions'>
         <div v-if="type&&type=='default'" class=" g__toast--loading">
@@ -30,7 +30,7 @@ export default {
     },
     callBack: {
       type: Function,
-      default () {}
+      default () { }
     },
     type: {
       type: String,
